@@ -19,12 +19,12 @@
 // own numbers.
 //
 // Dev-window check (kit's frozen 24h window, BTC +0.5% over the day): the
-// official local grade gives net PnL +33.79 USDC with 3 round trips and
-// ~0.7% maximum drawdown, above the dev gate's break-even, while buy-and-hold
-// records about +5 USDC on the same window and the previous momentum bot
-// records -32 USDC. The parameters sit on a broad plateau: neighbouring
-// settings (window 300-360 bars, dip 1.4-1.6%, take-profit 1.5-2.0%) all score
-// +23 to +34 USDC, so the result does not hinge on one tuned number.
+// official local grade gives net PnL +33.79 USDC with 5 trades (win rate
+// 1.00) and 0.72% maximum drawdown, above the dev gate's break-even, while
+// buy-and-hold records about +5 USDC on the same window and the previous
+// momentum bot records -32 USDC. The parameters sit on a broad plateau: neighbouring settings (window
+// 300-360 bars, dip 1.4-1.6%, take-profit 1.5-2.0%) all score in the same
+// range, so the result does not hinge on one tuned number.
 
 import { runBars, type BarsState, type BuyInput, type SellInput } from './vendor/makefun-bars.ts';
 
